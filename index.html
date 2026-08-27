@@ -2,87 +2,104 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Microsoft Dynamics 365 Payment Portal</title>
+
+<title>Lenovo Customer Payment Portal</title>
 
 <style>
-body {
-    font-family: Segoe UI, Arial, sans-serif;
-    background-color: #f3f2f1;
-    margin: 0;
+
+body{
+    margin:0;
+    background:#f5f5f5;
+    font-family:Arial,Helvetica,sans-serif;
 }
 
-.header {
-    background-color: #0078d4;
-    color: white;
-    padding: 20px;
-    font-size: 24px;
-    font-weight: bold;
+.header{
+    background:#E2231A;
+    color:white;
+    padding:20px 40px;
+    font-size:32px;
+    font-weight:bold;
 }
 
-.container {
-    max-width: 900px;
-    margin: 40px auto;
-    background: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,.15);
+.container{
+    max-width:900px;
+    margin:40px auto;
+    background:white;
+    border-radius:8px;
+    box-shadow:0 2px 8px rgba(0,0,0,.15);
+    overflow:hidden;
 }
 
-.banner {
-    background: #fff4ce;
-    border-left: 5px solid #ffb900;
-    padding: 15px;
-    margin-bottom: 20px;
-    font-weight: bold;
+.banner{
+    background:#fff3cd;
+    color:#856404;
+    padding:15px;
+    font-weight:bold;
+    border-bottom:1px solid #ffeeba;
 }
 
-.card {
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin-bottom: 20px;
+.section{
+    padding:30px;
 }
 
-h2 {
-    margin-top: 0;
+h2{
+    margin-top:0;
+    color:#333;
 }
 
-.label {
-    color: #666;
-    font-size: 13px;
+.row{
+    display:flex;
+    justify-content:space-between;
+    border-bottom:1px solid #eee;
+    padding:12px 0;
 }
 
-.value {
-    font-size: 18px;
-    margin-bottom: 15px;
+.label{
+    color:#666;
+    font-weight:bold;
 }
 
-.button {
-    display: inline-block;
-    background: #0078d4;
-    color: white;
-    text-decoration: none;
-    padding: 12px 24px;
-    border-radius: 4px;
-    margin-right: 10px;
+.value{
+    color:#222;
 }
 
-.whatsapp {
-    background: #25d366;
+.amount{
+    font-size:28px;
+    color:#E2231A;
+    font-weight:bold;
 }
 
-.footer {
-    color: #666;
-    font-size: 12px;
-    margin-top: 25px;
+.button{
+    display:inline-block;
+    padding:14px 24px;
+    text-decoration:none;
+    color:white;
+    border-radius:4px;
+    margin-right:10px;
+    margin-top:20px;
 }
+
+.invoice{
+    background:#E2231A;
+}
+
+.whatsapp{
+    background:#25D366;
+}
+
+.footer{
+    padding:20px 30px;
+    color:#777;
+    font-size:12px;
+}
+
 </style>
-
 </head>
 
 <body>
 
 <div class="header">
-Microsoft Dynamics 365 Finance
+LENOVO
 </div>
 
 <div class="container">
@@ -91,30 +108,40 @@ Microsoft Dynamics 365 Finance
 SAMPLE / DEMO PURPOSES ONLY
 </div>
 
-<div class="card">
-<h2>Customer Payment Portal</h2>
+<div class="section">
 
+<h2>Customer Invoice Payment Portal</h2>
+
+<div class="row">
 <div class="label">Customer</div>
 <div class="value">John Cash</div>
-
-<div class="label">Invoice Number</div>
-<div class="value">DEMO-2026-08127</div>
-
-<div class="label">Total Balance</div>
-<div class="value">$263.18</div>
-
-<div class="label">Amount Due Today</div>
-<div class="value">$40.00</div>
-
-<a class="button"
-href="2026_08_27%20Lenovo_Mock_Invoice.pdf"
-target="_blank">
-View ref="https://wa.me/18034311452?text=Invoice%20Payment%20DEa>
-
 </div>
 
-<div class="footer">
-This site is a non-functional demonstration and does not process real payments.
+<div class="row">
+<div class="label">Invoice Number</div>
+<div class="value">DEMO-2026-08127</div>
+</div>
+
+<div class="row">
+<div class="label">Product</div>
+<div class="value">Lenovo ThinkPad T14 Gen 6</div>
+</div>
+
+<div class="row">
+<div class="label">Outstanding Balance</div>
+<div class="amount">$263.18</div>
+</div>
+
+<div class="row">
+<div class="label">Current Amount Due</div>
+<div class="amount">$40.00</div>
+</div>
+
+<a class="button invoice"
+href="2026_08_27%20Lenovo_Mock_Invoice.pdf">
+n whatsapp"
+href="https://wa.me/18034311452?text=Invoice%20Paymentdiv class="footer">
+This portal is a fictional demonstration site created for sample and training purposes only. No real payments are processed.
 </div>
 
 </div>
